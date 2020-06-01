@@ -9,9 +9,12 @@ import utils.ArrayUtil;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] array = {5,2,3,1};
+        int[] array = {-1,2,3,1,9,6};
         QuickSort qs = new QuickSort();
-        ArrayUtil.print(qs.quickSort1(array, 0, array.length - 1));
+        qs.quickSort2(array, 0, array.length - 1);
+
+        ArrayUtil.print(array);
+
     }
 
     /**
@@ -121,6 +124,39 @@ public class QuickSort {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+    }
+
+    /**
+     * 快排实现方式三
+     * @param array
+     * @param start
+     * @param end
+     */
+    public void quickSort2(int[] array, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+
+        int index = doQuickSort2(array, start, end);
+        quickSort2(array, start, index - 1);
+        quickSort2(array, index + 1, end);
+    }
+
+    private int doQuickSort2(int[] array, int start, int end) {
+        // 取最后元素为基准点
+        int index = array[end];
+
+        int i = start;
+
+        for (int j = start; j < end; j++) {
+            if (array[j] < index) {
+                swapInArray(array, i, j);
+                i++;
+            }
+        }
+
+        swapInArray(array, end, i);
+        return i;
     }
 
 }
