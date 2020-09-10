@@ -12,6 +12,7 @@ public class ArrayUtil {
                 System.out.print(",");
             }
         }
+        System.out.println();
     }
 
     public static void print(int[][] arr) {
