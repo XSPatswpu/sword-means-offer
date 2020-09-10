@@ -15,6 +15,17 @@ public class Leetcode_40 {
 
         Arrays.sort(candidates);
         dfs(candidates, 0, target, list, currentList);
+
+        List<Integer> numK = new ArrayList<>();
+
+        StringBuilder sb = new StringBuilder();
+        for (Integer integer : numK) {
+            sb.append(integer);
+        }
+
+
+        String s = "";
+
         return list;
     }
 
