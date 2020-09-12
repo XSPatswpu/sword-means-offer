@@ -3,10 +3,10 @@ package sreachback;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Leetcode77_Test {
+public class Leetcode_77 {
 
     public static void main(String[] args) {
-        Leetcode77_Test test = new Leetcode77_Test();
+        Leetcode_77 test = new Leetcode_77();
         List<List<Integer>> combine = test.combine_01(4, 2);
         System.out.println(combine);
     }

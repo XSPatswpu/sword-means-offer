@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Leetcode257_Test {
+public class Leetcode_257 {
     /**
      * 257. 二叉树的所有路径
      * @param args

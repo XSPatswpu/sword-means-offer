@@ -7,13 +7,13 @@ import java.util.List;
  * @author: xiangshaopeng
  * @date: 2020/9/3 14:13
  */
-public class Leetcode51_Test {
+public class Leetcode_51 {
     /**
      * n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
      * @param args
      */
     public static void main(String[] args) {
-        Leetcode51_Test lc = new Leetcode51_Test();
+        Leetcode_51 lc = new Leetcode_51();
         List<List<String>> lists = lc.solveNQueens(8);
         System.out.println(lists);
         lc.print(lists);
