@@ -32,6 +32,12 @@ public class Leetcode_94 {
     }
 
 
+    /**
+     * 理解迭代的思路：
+     * 和递归很相似，找到每次循环的共性，就是每次处理节点的重复动作
+     * @param root
+     * @return
+     */
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null) {
