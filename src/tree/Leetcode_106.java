@@ -16,6 +16,8 @@ public class Leetcode_106 {
      *
      * 递归一定是存在重复步骤的！上面的核心步骤就是在一直重复！
      *
+     * 还有一个体会就是：架构 > 实现细节
+     *
      * @param inorder
      * @param postorder
      * @return
