@@ -10,7 +10,7 @@ public class Leetcode_771 {
     public int numJewelsInStones(String J, String S) {
         Map<Character, Integer> charMap = new HashMap<>();
         for(int i = 0; i < S.length(); i++) {
-            Integer count = charMap.get(i);
+            Integer count = charMap.get(S.charAt(i));
             if (count == null) {
                 charMap.put(S.charAt(i), 1);
             } else {
