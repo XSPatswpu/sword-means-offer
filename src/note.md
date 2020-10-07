@@ -2,9 +2,13 @@
 
 <a href="url">69. x 的平方根</a>
 
-<a href="url">771. 宝石与石头</a>
+<a href="url">75. 颜色分类</a>
 
 <a href="url">142. 环形链表 II</a>
+
+<a href="url">771. 宝石与石头</a>
+
+
 
 
 
